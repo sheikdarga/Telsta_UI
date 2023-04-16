@@ -259,6 +259,20 @@ color: black;
 	box-sizing: border-box;
 }
 
+.img-zoom h1 {
+	max-width: 100%;
+	-moz-transition: all 2.0s;
+	-webkit-transition: all 2.0s;
+	transition: all 2.0s;
+}
+
+.img-zoom:hover h1{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
 .img-zoom img {
 	max-width: 100%;
 	-moz-transition: all 2.0s;
