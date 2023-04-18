@@ -51,9 +51,9 @@ body {
  color: white;
   position: absolute;
   font-family: Georgia, 'Times New Roman', Times, serif;
-
   z-index: 0;
-  right:50%;
+  left: 20%;
+  right: 20%;
   top: 50px;
 
 }
@@ -89,7 +89,7 @@ body {
     color: white;
     position: absolute;
     top:50px;
-    left: 30px;
+  
 }
 .img-zoom {
 	position: relative;
