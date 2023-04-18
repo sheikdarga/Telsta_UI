@@ -89,7 +89,31 @@ body {
     color: white;
     position: absolute;
     top:50px;
+    left: 30px;
 }
+.img-zoom {
+	position: relative;
+	overflow:hidden;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  
+}
+.img-zoom h1 {
+	max-width: 100%;
+	-moz-transition: all 2.0s;
+	-webkit-transition: all 2.0s;
+	transition: all 2.0s;
+}
+ 
+
+
+.img-zoom:hover h1{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
 
 .hero-image {
   z-index:-1;
@@ -97,7 +121,7 @@ body {
   height: 650px;
 }
 .rainbow{
-  background-color: #343A40;
+  background-color:orange;
   border-radius: 4px;  
   color: #fff;
   cursor: pointer;
@@ -121,32 +145,49 @@ h2 {
 
 
 .box {
-  text-align:center;
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
-  height:100%;
+  
   position:relative;
   overflow:hidden;
 }
 
 .cover {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  position: absolute;
+  bottom: 0;
+  
   background-color:rgba(60, 14, 146, 0.75);
-  transition:opacity 0.15s ease-in;
-  opacity:0;
-  padding-top:80px;
-  color:#fff;
-  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
-}
+  width: 100%;
+  height:16%;
+  transition: .8s ease;
+  color: white;
+  font-size: 20px;
+  text-align:center;
 
+
+}
 .cover:hover {
+  height: 100%;
+  opacity:0.5;
+}
+.cover1 {
+  position: absolute;
+  bottom: 0;
+  background-color:rgba(60, 14, 146, 0.75);
+  width: 100%;
+  height:10%;
+  transition: .8s ease;
+  color: white;
+  font-size: 20px;
+  text-align:center;
+
+
+}
+.cover1:hover {
+  height: 100%;
   opacity:1;
 }
+
+
+
 .img{
     margin-top: 140px;
     margin-right: 100px;
@@ -236,14 +277,14 @@ transform: scale(1.1);
   transform: scale(1.1);
 }
 .scrol{
-    transition: all 0.2s ease;
-cursor: pointer;
-font-family: Times New Roman, Times, serif;
-font-size: 20px;
+  margin-top: 65px;
+font-size: 16px;
 position: fixed;
 width: 10px;
-margin-top: 0px;
 color: black;
+transition: all 0.2s ease;
+cursor: pointer;
+font-family: Times New Roman, Times, serif;
 
 }
 .scrol:hover{
@@ -251,38 +292,4 @@ color: black;
 
 }
 
-.img-zoom {
-	position: relative;
-	overflow: hidden;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.img-zoom h1 {
-	max-width: 100%;
-	-moz-transition: all 2.0s;
-	-webkit-transition: all 2.0s;
-	transition: all 2.0s;
-}
-
-.img-zoom:hover h1{
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-
-
-.img-zoom img {
-	max-width: 100%;
-	-moz-transition: all 2.0s;
-	-webkit-transition: all 2.0s;
-	transition: all 2.0s;
-}
-
-.img-zoom:hover img{
-	-moz-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
 
