@@ -15,49 +15,118 @@
 	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src=" https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <script src="event.js"></script>
+    <style>
+      .scrol{
+          margin-top: 65px;
+          font-size: 16px;
+          position: fixed;
+          width: 10px;
+          color: black;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          font-family: Times New Roman, Times, serif;
+  
+            }
+     .scrol:hover{
+      box-shadow: 10px 6px 6px 2px #a2c3e4;
+  
+      }
+    </style>
 
 </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".scrol" data-bs-offset="50">
 
-      <!--header start-->  
-			<nav class="header">
-				<div class="navbar navbar-expand-lg">
-					<div class="container">
-						<a href="#" class=" text-decoration-none d-block d-lg-none fw-bold fs-1  "><img src="..\pvr img\logo3.jpg" width="60px" height="60px"/> </a>
-            <i class="fa fa-search d-block d-lg-none" style="font-size:36px; margin-right: 5px;"></i>
-                        
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-							aria-expanded="false" aria-label="Toggle navigation">
-							<span class=" fa fa-bars" style="font-size:34px" ></span>
-						</button>
+    <!--Side Scroll Starts-->
+    <nav class="navbar scrol d-none  d-xl-block">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <img src="..\pvr img\lineicon.jpg">
+            <a class="nav-link " href="#section1">Carousal</a>
+          </li>
+          <li class="nav-item">
+            <img src="..\pvr img\lineicon.jpg">
+            <a class="nav-link" href="#section2">About Us</a>
+          </li>
+          <li class="nav-item">
+            <img src="..\pvr img\lineicon.jpg">
+            <a class="nav-link" href="#section3">People</a>
+          </li>
+          <li class="nav-item">
+            <img src="..\pvr img\lineicon.jpg">
+            <a class="nav-link" href="#section4">Purpose</a>
+          </li>
+          <li class="nav-item">
+            <img src="..\pvr img\lineicon.jpg">
+            <a class="nav-link" href="#section5">Overview</a>
+          </li>
+          <li class="nav-item">
+            <img src="..\pvr img\lineicon.jpg">
+            <a class="nav-link" href="#section6">Our Work</a>
+          </li>
+          <li class="nav-item">
+            <img src="..\pvr img\lineicon.jpg">
+            <a class="nav-link" href="#section7">What we do</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Side Scroll Ends-->
 
-            <img class="	d-none d-lg-block d-xl-block  fw-bold fs-1 " src="..\pvr img\logo2.jpg" width="200px">
+    <!--header start-->  
+    <nav class="header">
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="#" class=" text-decoration-none d-block d-lg-none fw-bold fs-1  "><img src="..\pvr img\logo1.jpeg"width="160px" height="50px"/> </a>
+         
+                      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class=" fa fa-bars" style="font-size:34px" ></span>
+          </button>
 
-						<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-							<ul id="nav-length" class="navbar-nav justify-content-between border-top border-2 text-center">
-								<li class="nav-item">
-									<a href="../html/index.html" class="nav-link border-hover py-3 text-black fa fa-home"style="font-size:24px">Home</a>
-								</li>
-								<li class="nav-item">
-									<a href="../html/about.html"class="nav-link border-hover py-3 text-black fa fa-bank"style="font-size:24px">About Us</a>
-                </li>
-								<li class="nav-item">
-									<a href="../html/services.html"  class="nav-link border-hover py-3  text-black 	fa fa-server" style="font-size:24px">Services</a>
-								</li>
-								<li class="nav-item">
-									<a href="../html/ContactUs.html"  class="nav-link border-hover py-3  text-black fa fa-address-book-o" style="font-size:24px">Contact</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-            <!--header end -->
+          <img class="	d-none d-lg-block d-xl-block  fw-bold fs-1 " src="..\pvr img\logo1.jpeg" width="200px">
 
-      <!--Carousal Starts-->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel" data-aos="slide-up" style="margin-top: 2%;">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul id="nav-length" class="navbar-nav justify-content-between border-top border-2 text-center">
+              <li>
+                <div class="searchbar ">
+                  <input class="search_input" type="text" name="" placeholder="Search...">
+                  <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="../html/index.html"  class="nav-link border-hover py-3 text-black fa fa-home"style="font-size:24px">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="../html/about.html"class="nav-link border-hover py-3 text-black fa fa-bank"style="font-size:24px">About Us</a>
+                              </li>
+              <li class="nav-item">
+                <a href="..\html\services.html" class="nav-link border-hover py-3  text-black 	fa fa-server" style="font-size:24px">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="..\html\ContactUs.html"  class="nav-link border-hover py-3  text-black fa fa-address-book-o" style="font-size:24px">
+                  Contact
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="..\html\gallery.html" class="nav-link border-hover py-3  text-black 	far fa-images" style="font-size:24px">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+          <!--header end -->
+        
+
+    <!--Carousal Starts-->
+    <div id="section1">
+     <div class="container">
+      <div class="row">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel" data-aos="slide-up" style="margin-top: 2%;">
 
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
@@ -68,14 +137,14 @@
         
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
-          <div class="carousel-item ">
-            <img src="..\pvr img\tteam2.png" alt="Los Angeles" class="d-block" width="100%" height="600px">
-          </div>
           <div class="carousel-item active">
-            <img src="..\pvr img\tteam1.png" alt="Chicago" class="d-block" width="100%" height="600px">
+            <img src="..\pvr img\c1.png" alt="Los Angeles" class="d-block image" width="100%" height="600px">
+          </div>
+          <div class="carousel-item ">
+            <img src="..\pvr img\c2.png" alt="Chicago" class="d-block image" width="100%" height="600px">
           </div>
           <div class="carousel-item">
-            <img src="..\pvr img\tteam3.png" alt="New York" class="d-block" width="100%" height="600px">
+            <img src="..\pvr img\c3.png" alt="New York" class="d-block image" width="100%" height="600px">
           </div>
         </div>
         
@@ -87,23 +156,25 @@
           <span class="carousel-control-next-icon"></span>
         </button>
       </div>
-      <!--Carousal Ends-->
-      <div class="container ">
-        <div class="row">
-        <h1 class="headings text-center " style="margin-top:40px; ">About Us</h1>
-        </div>
       </div>
+     </div>
+    </div>
+      <!--Carousal Ends-->
 
       <!--Pattern Starts-->
+    <div id="section2">
       <div class="container " style="margin-top:40px; margin-bottom: 10%;">
         <div class="row" style="margin-bottom: 2%;">
-          <div class="col-md-3">
-              <img src="..\pvr img\icons8-1st-64.png" alt="..." width="100px" height="100px" style="float: right;" data-aos="fade-right">
+          <h1 class="headings text-center " style="margin-top:40px; ">About Us</h1>
           </div>
-          <div class="col-md-8 bgcolour "  data-aos="slide-up" style="border-left: #5982d2 solid 5px;border-bottom:#5982d2 solid 5px ;  ">
+        <div class="row" style="margin-bottom: 2%;">
+          <div class="col-md-3">
+              <img src="..\pvr img\icons8-1-100.png" alt="..."  style="float: right;" data-aos="fade-right">
+          </div>
+          <div class="col-md-8 bgcolour "  data-aos="slide-up" style="border-left: #457bb5 solid 4px; border-bottom:#457bb5 solid 4px ;  ">
             <div style="margin-top: 20px;">
-            <p class="pstyle ">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-              Take advantage of both online and offline resources. </p>
+            <p class="pstyle ">TELSTA, is an IT services, consulting and business solutions organization that has been partnering with many of the India’s largest businesses.
+               We believe innovation and collective knowledge can transform all our futures with greater purpose. </p>
             </div>
           </div>
           <div class="col-md-1">
@@ -114,25 +185,25 @@
           <div class="col-md-1">
 
           </div>
-          <div class="col-md-8 bgcolour "  data-aos="slide-up" style="border-right: #5982d2 solid 5px;border-bottom:#5982d2 solid 5px ;  ">
+          <div class="col-md-8 bgcolour "  data-aos="slide-up" style="border-left: #457bb5 solid 4px; border-bottom:#457bb5 solid 4px ;  ">
             <div style="margin-top: 20px;">
-            <p class="pstyle ">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-              Take advantage of both online and offline resources. </p>
+            <p class="pstyle ">We believe in building greater futures by connecting people to opportunities in the digital economy. It is an ethos in keeping with the values of our parent company, the Telsta.
+               The work we do is driven toward creating a fairer and more equitable world for all. </p>
             </div>
           </div>
           <div class="col-md-3">
-            <img src="..\pvr img\icons8-circled-2-64.png" width="100px" height="100px" alt="..." data-aos="slide-up">
+            <img src="..\pvr img\icons8-2-100.png"  alt="..." data-aos="fade-left">
           </div>
           
         </div>
         <div class="row" style="margin-bottom: 2%;">
           <div class="col-md-3">
-            <img src="..\pvr img\icons8-circled-3-64.png" alt="..." width="100px" height="100px"style="float: right;" data-aos="fade-right">
+            <img src="..\pvr img\icons8-3-100.png" alt="..." style="float: right;" data-aos="fade-right">
           </div>
-          <div class="col-md-8 bgcolour "  data-aos="fade-right" style="border-left: #5982d2 solid 5px;border-bottom:#5982d2 solid 5px ;  ">
+          <div class="col-md-8 bgcolour "  data-aos="slide-up" style="border-left: #457bb5 solid 4px; border-bottom:#457bb5 solid 4px ;  ">
             <div style="margin-top: 20px;">
-            <p class="pstyle ">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-              Take advantage of both online and offline resources. </p>
+            <p class="pstyle ">Our diversity is an asset. It enriches us. It makes us stronger. It powers fresh thought.
+               We nurture and strengthen an inclusive and equitable culture, where each individual feels seen and heard, and their contributions respected and valued.</p>
             </div>
           </div>
           <div class="col-md-1">
@@ -143,25 +214,25 @@
           <div class="col-md-1">
 
           </div>
-          <div class="col-md-8 bgcolour "  data-aos="fade-right" style="border-right: #5982d2 solid 5px;border-bottom:#5982d2 solid 5px ;  ">
+          <div class="col-md-8 bgcolour "  data-aos="slide-up" style="border-left: #457bb5 solid 4px; border-bottom:#457bb5 solid 4px ;  ">
             <div style="margin-top: 20px;">
-            <p class="pstyle ">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-              Take advantage of both online and offline resources. </p>
+            <p class="pstyle ">TELSTA is seen as a benchmark in its outreach to investors, in its transparency and disclosures, publicly communicating its strategy, 
+              risks and opportunities, reducing information asymmetries and enabling fair valuation of the stock </p>
             </div>
           </div>
           <div class="col-md-3">
-            <img src="..\pvr img\icons8-4-64.png" width="100px" height="100px" alt="..." data-aos="slide-up">
+            <img src="..\pvr img\icons8-4-100.png"  alt="..." data-aos="fade-left">
           </div>
         </div>
         <div class="row" style="margin-bottom: 2%;">
          
           <div class="col-md-3">
-            <img src="..\pvr img\icons8-circled-5-64.png"width="100px" height="100px" alt="..." style="float: right;" data-aos="fade-right">
+            <img src="..\pvr img\icons8-5-100.png" alt="..." style="float: right;" data-aos="fade-right">
           </div>
-          <div class="col-md-8 bgcolour "  data-aos="fade-right" style="border-left: #5982d2 solid 5px;border-bottom:#5982d2 solid 5px ;  ">
+          <div class="col-md-8 bgcolour "  data-aos="slide-up" style="border-left: #457bb5 solid 4px; border-bottom:#457bb5 solid 4px ;  ">
             <div style="margin-top: 20px;">
-            <p class="pstyle ">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-              Take advantage of both online and offline resources. </p>
+            <p class="pstyle ">Welcome to a space where we tell you stories about TELSTA, its ideas, and its people. Find out how we break down our challenges with design thinking, or what it takes to manage the aspirations.
+               Know why we’re nurturing our own innovation ecosystem, and why corporate sustainability matters to us.Get to know us on the inside. Get to know The TELSTA Way.  </p>
             </div>
           </div>
           <div class="col-md-1">
@@ -172,21 +243,23 @@
           <div class="col-md-1">
 
           </div>
-          <div class="col-md-8 bgcolour "  data-aos="fade-right" style="border-right: #5982d2 solid 5px;border-bottom:#5982d2 solid 5px ;  ">
+          <div class="col-md-8 bgcolour "  data-aos="slide-up" style="border-left: #457bb5 solid 4px; border-bottom:#457bb5 solid 4px ;  ">
             <div style="margin-top: 20px;">
-            <p class="pstyle ">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-              Take advantage of both online and offline resources. </p>
+            <p class="pstyle ">The work we do males a difference to the way.
+               We believe our contextual knowledge and expertise is a differentiating factor in bringing our client's vision to life </p>
             </div>
           </div>
           <div class="col-md-3">
-            <img src="..\pvr img\icons8-6-64.png" width="100px" height="100px" alt="..." data-aos="slide-up">
+            <img src="..\pvr img\icons8-6-100.png" alt="..." data-aos="fade-left">
           </div>
         </div>
         
       </div>
+    </div>
       <!--Pattern Ends-->
 
       <!--Team Members Starts-->
+    <div id="section3">
       <div class="container imgbg" >
         <div class="row bgimage1 " style="margin-top: 20px;">
           <div class="col-md-5 ">
@@ -194,16 +267,16 @@
           </div>
           <div class="col-md-7" style="font-family: 'Times New Roman', Times, serif;" data-aos="slide-up">
             <h3 class="hstyle">HR Team</h3>
-            <p class="pstyle">V CUBE SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-              Take advantage of both online and offline resources. </p>
+            <p class="pstyle">Finding talent is one of the most critical challenges that any organization has to face. We at Team HR have made talent search our specialty.
+              With over a decade of recruitment and staffing expertise, Team HR has earned itself a reputation for providing professional talent with the skills and expertise your business needs to thrive. </p>
           </div>
         </div>
         <div class="row" style="margin-top: 20%;margin-bottom: 20px;">
          
           <div class="col-md-7" data-aos="slide-up">
             <h3 class="hstyle">Employees</h3>
-            <p class="pstyle">V CUBE SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-                Take advantage of both online and offline resources. </p>
+            <p class="pstyle">We believe our strength is in our people. From the joy of working on cutting-edge technologies to a sense of achievement,
+              set in an environment of transparency discover why Telsta is one of the most desirable workplaces. </p>
           </div>
           <div class="col-md-5">
             <img src="..\pvr img\team2.jpg" width="100%" height="100%" alt="..."  data-aos="fade-right">
@@ -213,30 +286,34 @@
           </div>
         </div>
       </div>
+    </div>
       <!--Team Members Ends-->
 
       <!--Purpose Starts-->
-      <div class="container sborder" data-aos="slide-up">
+    <div id="section4">
+      <div class="container sborder" style="margin-top: 10%;" data-aos="slide-up">
         <div class="row">
             <div class="col-md-12 tplace" >
                 <h1 class="h1size"><b>Our Purpose:</b></h1>
-                <p class="psize">To amplify human potential and create the next opportunity for people, businesses and communities</p>
+                <p class="pstyle">To amplify human potential and create the next opportunity for people, businesses and communities</p>
             </div>
           <div class="container">
             <div class="row">
-              <div class="col-md-6 img-fluid">
-                <video src="../pvr img/videoplayback.mp4" height="200px" width="100%" controls></video>
+              <div class="col-md-6 img-fluid center">
+                <video src="../pvr img/video.mp4" height="200px" width="50%" controls></video>
               </div>
-              <div class="col-md-6 img-fluid">
-                <video src="../pvr img/videoplayback.mp4" height="200px" width="100%" controls></video>
+              <div class="col-md-6 img-fluid center">
+                <video src="../pvr img/video.mp4" height="200px" width="50%" controls></video>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </div>
     <!--Purpose Ends-->
 
     <!--Overview Starts-->
+    <div id="section5">
     <div class="container overviewim2g">
        <div class="row h1size text-center"  data-aos="slide-up">
          <p>Overview</p>
@@ -252,8 +329,9 @@
             </div>
           </div>
           <div class="col-md-6 textborder contentbg" style="margin-top: 50px;">
-            <p class="pstyle">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-            Take advantage of both online and offline resources.</p>
+            <p class="pstyle">A Founder is an individual who forms and establishes a business or organization. The founder is typically responsible for setting the mission and vision of a company.
+              Essentially, a founder takes a business from an idea to an entity. As mentioned above, team members wear many hats ensuring the work gets done to keep the company going as it grows and scales.
+            </p>
           </div>
           <div class="col-md-2" >
          
@@ -270,8 +348,8 @@
           </div>
         </div>
         <div class="col-md-6 textborder contentbg" style="margin-top: 50px;">
-          <p class="pstyle">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-            Take advantage of both online and offline resources.</p>
+          <p class="pstyle">A company profile is a professional summary that describes a business and what it does.
+             You'll need a professional company profile if you're trying to hook into investors, but you can also use it to pacify other stakeholders, including clients and people visiting your site for the first time.</p>
         </div>
        
         <div class="col-md-1" >
@@ -289,8 +367,8 @@
           </div>
         </div>
         <div class="col-md-6 textborder contentbg" style="margin-top: 50px;">
-          <p class="pstyle">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-            Take advantage of both online and offline resources.</p>
+          <p class="pstyle">Team management focuses on motivating a group of employees to work toward a common goal. Differing styles of team management achieve goals in different ways.
+             It’s the duty of team managers to support the needs of team members in a way that’s helpful, positive, and motivating.</p>
         </div>
         <div class="col-md-2" >
         
@@ -307,8 +385,8 @@
           </div>
         </div>
         <div class="col-md-6 textborder contentbg" style="margin-top: 50px;">
-          <p class="pstyle">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-            Take advantage of both online and offline resources.</p>
+          <p class="pstyle">Recruitment offices search for reasonable contenders for empty positions within a pool of companies.
+             In view of an expected set of responsibilities they look for appropriate applicants through their site, organization, work fairs, places of work and online media. </p>
           </div>
         
         <div class="col-md-2" >
@@ -326,164 +404,278 @@
           </div>
         </div>
         <div class="col-md-6 textborder contentbg" style="margin-top: 50px;">
-          <p class="pstyle">TELSTA SOFTWARE SOLUTIONS PVT.LTD, is an institute that caters to the needs of students, businessmen and freelancers wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad, India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd offers online information  technology courses, online computer programming classes, and starting information technology courses.
-            Take advantage of both online and offline resources.</p>
+          <p class="pstyle">Services refer to the activities that help organizations but do not necessarily result in a physical commodity.Software services enhance features and upgrade the security for a company or individual's technological devices, such as computers and phones.
+             These services provide anti-virus protection and update applications to be more user-friendly and effective. </p>
         </div>
         <div class="col-md-2" >
         
         </div>
       </div>
     </div>
-    
+  </div>
     <!--Overview #Ends-->
 
     <!--JS Numbers Starts-->
+    <div id="section6">
     <div class="container  background2" style="margin-top: 10%;" data-aos="slide-up">
       <div class="row">
           <div class="col-md-3 center">
-            <img src="..\pvr img\apps.jpeg" class="rounded-circle" width="100px" height="100px" style="margin-top: 30px ;margin-left: 20px;" alt=""><br>
+            <img src="..\pvr img\icons8-apps-tab-100.png"  style="margin-top: 30px ;margin-left: 20px;" alt=""><br>
               <span class="num" num="153">00</span>
               <h4 class="text-size">Apps Developed</h4>
           </div>
           <div class="col-md-3 center">
-              <img src="..\pvr img\website.jpeg" class="rounded-circle" width="100px" height="100px" style="margin-top: 30px ;" alt=""><br>
+              <img src="..\pvr img\icons8-websites-100.png" style="margin-top: 30px ;" alt=""><br>
               <span class="num" num="566">00</span>
               <h4 class="text-size">Websites Developed</h6>
           </div>
           <div class="col-md-3 center">
-              <img src="..\pvr img\years.jpeg" class="rounded-circle" width="100px" height="100px" style="margin-top: 30px ;" alt=""><br>
+              <img src="..\pvr img\icons8-windows-calendar-100.png"  style="margin-top: 30px ;" alt=""><br>
               <span class="num" num="3">00</span>
               <h4 class="text-size">Years</h4>        </div>
           <div class="col-md-3 center">
-              <img src="..\pvr img\clients.jpeg" class="rounded-circle" width="100px" height="100px" style="margin-top: 30px ;" alt=""><br>
+              <img src="..\pvr img\icons8-clients-100.png"  style="margin-top: 30px ;" alt=""><br>
               <span class="num" num="2255">00</span>
               <h4 class="text-size">Clients</h4>        </div>
           </div>
+      </div>
     </div>
     <!--JS Numbers Ends-->
 
-  <!--Images Starts-->    
-  <div class="container" style="margin-top: 50px; margin-bottom:20px;" data-aos="slide-up">
+  <!--Images Starts--> 
+  <div id="section7"> 
+  <div class="container" style="margin-top: 10%;" data-aos="slide-up">
     <div class="row">
-      <div class="col-md-3">
-        <img src="..\pvr img\Digital Core Capabilities.png" alt="..." width="100%" height="300px" >
-      </div>
-      <div class="col-md-3">
-        <img src="..\pvr img\Digital Operating Models.png" alt="..." width="100%" height="300px" >
-      </div>
-      <div class="col-md-3">
-        <img src="..\pvr img\Empowering Talent Transformations.png" alt="..." width="100%" height="300px" >
-      </div>
       <div class="col-md-3 ">
-        <img src="..\pvr img\Navigating new Possibilities.png" alt="..." width="100%" height="300px">
+        <img src="..\pvr img\Digital Core Capabilities.png" class="Imgborder" alt="..." width="100%" height="300px" >
+      </div>
+      <div class="col-md-3">
+        <img src="..\pvr img\Digital Operating Models.png" class="Imgborder" alt="..." width="100%" height="300px" >
+      </div>
+      <div class="col-md-3">
+        <img src="..\pvr img\Empowering Talent Transformations.png" class="Imgborder" alt="..." width="100%" height="300px" >
+      </div>
+      <div class="col-md-3">
+        <img src="..\pvr img\Navigating new Possibilities.png" class="Imgborder" alt="..." width="100%" height="300px">
       </div>
     </div>
   </div>
+  </div>  
   <!--Images Ends-->    
 
 
-  <div class="container my-5" data-aos="slide-up">
-    <!-- Footer -->
-    <footer
-            class="text-center text-lg-start text-white"
-            style="background-color: #1c2331;"
-            >
-     
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-        
-          <div class="row mt-3">
-            <!-- telsta name and logo-->
-         
-            <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-4">
-             
-              <h6 class="text-uppercase fw-bold textcolor">Telsta Company</h6>
-              <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-              <p>
-                <img src="..\pvr img\logo3.jpg"width="150px" height="150px"/>                     
-             </p>
-            </div>
-            
-  
-            <!-- main column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 cardbody">
-            
-              <h6 class="text-uppercase fw-bold textcolor ">MAIN</h6>
-              <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-              <p>
-                <a href="../html/index.html" class="text-white">Home</a>
-                      </p>
-                      <p>
-                            <a href="../html/services.html" class="text-white" >Our Services </a>               
-                      </p>
-                      <p>
-                        <a href="../html/about.html" class="text-white">About</a>
-                      </p>
-                      <p>
-                        <a href="../html/ContactUs.html" class="text-white">Contact</a>
-                      </p>
-            </div>
-                    
-            
-  
-            <!-- support column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 cardbody">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold textcolor">Support</h6>
-              <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-                  <P>Terms of Use</P>
-                   <P>Privacy Statement</P> 
-                    <P>Cookie Policy</P> 
-                    <P>Safe Harbour Provision</P> 
-                    <P>Trademarks</P> 
-                    <P>Site Map</P> 
-              
-             
-            </div>
-            
-  
-            <!-- contact column -->
-            <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 cardbody">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold textcolor">Contact</h6>
-              <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-              <p><i class="fas fa-home mr-3"></i> KPHB COLONY</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-              <p><i class="fas fa-phone mr-3"></i> 9701299753</p>
-              <p><i class="fas fa-print mr-3"></i> 9701299753</p>
-            </div>
-            <!--social media column-->
-            <div  class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 cardbody">
-                <h6 class="text-uppercase fw-bold textcolor">social media</h6>
-              <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-                  <div>
-                    <img class=" my-3 " src="..\pvr img\icons8-twitter-1.png" width="40px" alt="twitter">
-                    <img class=" my-3" src="..\pvr img\icons8-facebook-40.png" width="40px" alt="facebook">
-                    <img class=" my-3" src="..\pvr img\icons8-instagram-48.png" width="40px" alt="instagram">
-                    <img class=" my-3" src="..\pvr img\icons8-youtube-48.png"width="40px" alt="youtube">
-                </div>
-            </div>
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height: 400px;background-image: url('../pvr img/background15.jpg');">
+      <div class="modal-header">
+        <img src="..\pvr img\darga.jpg" width="150px" height="10px" alt="" class="rounded-circle  img-fluid d-block mx-auto mb-3">
+      </div>
+      <div class="modal-body text-primary">
+        Java Developer
+          <div class="text-black">
+            <h5 class="modal-title" id="exampleModalLabel">Sheik Darga</h5>
+            <h6>Email : sheikdarga755@gmail.com</h6>
+            <h6>Phone No : 9701299753</h6>
           </div>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height: 400px;background-image: url('../pvr img/background15.jpg');">
+      <div class="modal-header">
+        <img src="..\pvr img\siri.jpg" width="150px" height="150px" alt="" class="rounded-circle  img-fluid d-block mx-auto mb-3">
+      </div>
+      <div class="modal-body text-primary">
+        Web Developer
+        <div class="text-black">
+          <h5 class="modal-title" id="exampleModalLabel">Siri</h5>
+          Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+          tenetur.
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height: 400px;background-image: url('../pvr img/background15.jpg');">
+      <div class="modal-header">
+        <img src="..\pvr img\prema.jpg" width="150px" height="150px" alt="" class="rounded-circle  img-fluid d-block mx-auto mb-3">
+      </div>
+      <div class="modal-body text-primary">
+        Web Developer
+        <div class="text-black">
+        <h5 class="modal-title" id="exampleModalLabel">PREMA KUMAR</h5>
+        Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+        tenetur.
         </div>
-      </section>
-    </footer>
-    <!-- Footer -->
-  </div>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height: 400px;background-image: url('../pvr img/background15.jpg');">
+      <div class="modal-header">
+        <img src="..\pvr img\shivani.jpg" width="150px" height="150px" alt="" class="rounded-circle  img-fluid d-block mx-auto mb-3">
+      </div>
+      <div class="modal-body text-primary">
+         Web Developer
+         <div class="text-black">
+          <h5 class="modal-title" id="exampleModalLabel">Shivani</h5>
+          Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+          tenetur.
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="container my-3" data-aos="slide-up" style="font-family: 'Times New Roman', Times, serif;">
+        <!-- Footer -->
+        <footer
+                class="text-center text-lg-start text-white"
+                style="background-color: #1c2331;"
+                >
+         
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+            
+              <div class="row mt-3">
+                <!-- telsta name and logo-->
+             
+                <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-4">
+                 
+                  <h6 class="text-uppercase fw-bold textcolor">Telsta Company</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <img src="..\pvr img\logo3.jpg"width="150px" height="150px"/>                     
+                 </p>
+                </div>
+                
+      
+                <!-- main column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 cardbody">
+                
+                  <h6 class="text-uppercase fw-bold textcolor ">MAIN</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                      <p>
+                        <a href="../html/index.html" class="text-white">Home</a>
+                              </p>
+                              <p>
+                                <a href="../html/about.html" class="text-white">About</a>
+                              </p>                                  </p>
+                              <p>
+                                <a href="../html/services.html" class="text-white" >Our Services </a>
+                                
+                              <p>
+                                <a href="../html/ContactUs.html" class="text-white">Contact</a>
+                              </p>
+                              <p>
+                                <a href="..\html\gallery.html" class="text-white">Gallery</a>
+                              </p>
+                </div>
+                
+      
+                <!-- support column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 cardbody">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold textcolor">Support</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                      <P>Terms of Use</P>
+                       <P>Privacy Statement</P> 
+                        <P>Cookie Policy</P> 
+                        <P>Safe Harbour Provision</P> 
+                        <P>Trademarks</P> 
+                        <P>Site Map</P> 
+                  
+                 
+                </div>
+                
+      
+                <!-- contact column -->
+                <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 cardbody">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold textcolor">Contact</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p><i class="fas fa-home mr-3"></i> KPHB COLONY</p>
+                  <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> 9701299753</p>
+                  <p><i class="fas fa-print mr-3"></i> 9701299753</p>
+                </div>
+                <!--social media column-->
+                <div  class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 cardbody">
+                    <h6 class="text-uppercase fw-bold textcolor">social media</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                      <div >
+                        <img class=" my-3 " src="..\pvr img\icons8-twitter-1.png" width="40px" alt="twitter">
+                        <img class=" my-3" src="..\pvr img\icons8-facebook-48.png" width="40px" alt="facebook">
+                        <img class=" my-3" src="..\pvr img\icons8-instagram-48.png" width="40px" alt="instagram">
+                        <img class=" my-3" src="..\pvr img\icons8-youtube-48.png"width="40px" alt="youtube">
+                    </div>
+                    <div>
+                      <h6 class="text-uppercase fw-bold textcolor">DEVELOPMENT TEAM</h6>
+                      <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                      
+                      <!-- Button trigger modal -->
+                      <div style="display: grid;">
+                           <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal1">SHEIK DARGA</button>
+                           <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">SIRI</button>
+                           <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3">PREMA KUMAR</button>
+                           <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal4">SHIVANI</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+        </footer>
+        <!-- Footer -->
+      </div>   
 
         
 

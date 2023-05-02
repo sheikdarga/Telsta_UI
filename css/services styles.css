@@ -1,10 +1,60 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
+body {
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+
+  .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 30px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 120px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 50px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  color: black;
+    background-color:white;
    
-}
+    text-decoration:none;
+    }
+
 
 .header{
-    background-color: rgb(145, 145, 236);
+    background-color:white;
     background-size: cover;
     top:0;
    }
@@ -18,7 +68,6 @@ body{
     border-top: 5px solid #ff9138;
     transform: translateY(-4px);
 }
-
 
 .navbar-toggler {
     border:2px solid #FF9138;
@@ -189,8 +238,29 @@ a:hover{
     transition:transform .2s;
 }
 .con-front:hover .front-card{
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 .card-body:hover{
     background-color: aquamarine;
 }
+@media screen and (max-width:634px){
+    .cards-slide{
+        margin-top: 78px;
+    }
+}
+.scrol{
+    margin-top: 65px;
+  font-size: 16px;
+  position: fixed;
+  width: 10px;
+  color: black;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-family: Times New Roman, Times, serif;
+  
+  }
+  .scrol:hover{
+      box-shadow: 10px 6px 6px 2px #a2c3e4;
+  
+  }
+

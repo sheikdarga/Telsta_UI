@@ -1,10 +1,60 @@
 body {
     position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
 
+
+  .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 30px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 120px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 50px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  color: black;
+    background-color:white;
+   
+    text-decoration:none;
+    }
+
+
 .header{
-    background-color: rgb(145, 145, 236);
+    background-color:white;
     background-size: cover;
     top:0;
    }
@@ -18,7 +68,6 @@ body {
     border-top: 5px solid #ff9138;
     transform: translateY(-4px);
 }
-
 
 .navbar-toggler {
     border:2px solid #FF9138;
@@ -77,8 +126,19 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 
   z-index: 0;
-  right:80px;
+  right:10%;
   top: 50px;
+
+}
+.hero-overlay {
+  text-align: center;
+ color: white;
+  position: absolute;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  z-index: 0;
+  left: 10%;
+  right: 10% ;
+  top: 20px;
 
 }
   
@@ -154,7 +214,7 @@ h2 {
   position: absolute;
   bottom: 0;
   
-  background-color:rgba(60, 14, 146, 0.75);
+  background-color:rgba(22, 52, 91, 0.75);
   width: 100%;
   height:16%;
   transition: .8s ease;
@@ -166,12 +226,12 @@ h2 {
 }
 .cover:hover {
   height: 100%;
-  opacity:0.5;
+  opacity:1;
 }
 .cover1 {
   position: absolute;
   bottom: 0;
-  background-color:rgba(60, 14, 146, 0.75);
+  background-color:rgba(22, 52, 91, 0.75);
   width: 100%;
   height:10%;
   transition: .8s ease;
@@ -224,7 +284,7 @@ h2 {
 .heading{
     font-family: Times New Roman, Times, serif;
      font-weight: bold;
-     font-size: 65px;
+     font-size: 45px;
 }
 .heading1{
     font-family: Times New Roman, Times, serif;
@@ -250,20 +310,7 @@ background-color: aqua;
 
 transform: scale(1.1);
 }
-.two{
 
-transition: all 0.2s ease;
-cursor: pointer;
-font-family: Times New Roman, Times, serif;
-
-}
-.two:hover{
-
-box-shadow: 5px 6px 6px 2px #e9ecef;
-background-color: rgb(126, 173, 173);
-
-transform: scale(1.1);
-}
 .circleimg:hover{
   border-style: groove;
   border-color: #FF9138;

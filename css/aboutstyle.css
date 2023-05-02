@@ -1,8 +1,60 @@
-body{
-    background-image: url("C:\Users\sheikdarga\Downloads\abstract-wall.jpg");
-}
+body {
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+
+  .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 50px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 30px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 120px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 50px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  color: black;
+    background-color:white;
+   
+    text-decoration:none;
+    }
+
+
 .header{
-    background-color: rgb(145, 145, 236);
+    background-color:white;
     background-size: cover;
     top:0;
    }
@@ -16,7 +68,6 @@ body{
     border-top: 5px solid #ff9138;
     transform: translateY(-4px);
 }
-
 
 .navbar-toggler {
     border:2px solid #FF9138;
@@ -40,7 +91,11 @@ body{
         border-top: 0;
     }
 }
-
+@media (max-width:320px){
+    .image{
+        height: 250px;
+    }
+}
 .textcolor{
     color: orange;
 }
@@ -95,7 +150,7 @@ body{
     font-size: 26px;
 }
 .h1size{
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     color:rgb(55, 109, 208);
 
@@ -191,13 +246,13 @@ body{
     border-radius:70%;
 }
 .textborder{
-    border:2px solid rgb(82, 130, 219);
+    border:2px solid rgb(48, 62, 31);
     font-family: 'Times New Roman', Times, serif;
     border-radius: 10px;
 }
 .pstyle{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 24px;
 }
 .hstyle{
     font-family: 'Times New Roman', Times, serif;
@@ -215,7 +270,7 @@ body{
     width: 20px;
 }
 .bgcolour{
-    background-color: rgb(173, 217, 119);
+    background-color: rgb(213, 216, 218);
 }
 .center{
     text-align: center;
@@ -247,4 +302,9 @@ span{
     background-image:url("../pvr img/abstract flow 0802.jpg");
     width: 100%;
 
+}
+.Imgborder{
+    margin-top: 10%; 
+    margin-bottom: 10%; 
+    border: 2px solid  rgb(2, 97, 156);
 }

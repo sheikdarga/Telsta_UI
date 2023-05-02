@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\css\gallerycss.css">
+</head>
+<body>
+        <!--header start-->  
+			<nav class="header">
+				<div class="navbar navbar-expand-lg">
+					<div class="container">
+						<a href="#" class=" text-decoration-none d-block d-lg-none fw-bold fs-1  "><img src="..\pvr img\logo1.jpeg"width="160px" height="50px"/> </a>
+           
+                        
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class=" fa fa-bars" style="font-size:34px" ></span>
+						</button>
+
+            <img class="	d-none d-lg-block d-xl-block  fw-bold fs-1 " src="..\pvr img\logo1.jpeg" width="200px">
+
+						<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+							<ul id="nav-length" class="navbar-nav justify-content-between border-top border-2 text-center">
+                <li>
+                  <div class="searchbar ">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                  </div>
+                </li>
+								<li class="nav-item">
+									<a href="../html/index.html"  class="nav-link border-hover py-3 text-black fa fa-home"style="font-size:24px">Home</a>
+								</li>
+								<li class="nav-item">
+									<a href="../html/about.html"class="nav-link border-hover py-3 text-black fa fa-bank"style="font-size:24px">About Us</a>
+                                </li>
+								<li class="nav-item">
+									<a href="..\html\services.html" class="nav-link border-hover py-3  text-black 	fa fa-server" style="font-size:24px">Services</a>
+								</li>
+								<li class="nav-item">
+									<a href="..\html\ContactUs.html"  class="nav-link border-hover py-3  text-black fa fa-address-book-o" style="font-size:24px">
+										Contact
+									</a>
+								</li>
+                <li class="nav-item">
+									<a href="..\html\gallery.html" class="nav-link border-hover py-3  text-black 	far fa-images" style="font-size:24px">Gallery</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+            <!--header end -->
+
+
+    <!--Carousal Starts-->
+        <div class="container">
+         <div class="row">
+           <div id="demo" class="carousel slide" data-bs-ride="carousel" data-aos="slide-up" style="margin-top: 2%;">
+   
+           <!-- Indicators/dots -->
+           <div class="carousel-indicators">
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+             <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+           </div>
+           
+           <!-- The slideshow/carousel -->
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img src="..\pvr img\gc1.jpg" alt="Los Angeles" class="d-block image" width="100%" height="600px">
+             </div>
+             <div class="carousel-item ">
+               <img src="..\pvr img\gc2.jpg" alt="Chicago" class="d-block image" width="100%" height="600px">
+             </div>
+             <div class="carousel-item">
+               <img src="..\pvr img\gc3.jpg" alt="New York" class="d-block image" width="100%" height="600px">
+             </div>
+           </div>
+           
+           <!-- Left and right controls/icons -->
+           <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+           </button>
+           <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+             <span class="carousel-control-next-icon"></span>
+           </button>
+         </div>
+         </div>
+        </div>
+         <!--Carousal Ends-->
+
+
+             <!-----------------------------------------Images gallery---------------------------------------------------->
+                 <!--Heading Starts-->
+    <div class="conatiner">
+      <div class="row">
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-md-4 ghead">
+              <p>Gallery</p>
+          </div>
+          <div class="col-md-4">
+              
+          </div>
+      </div>
+  </div>
+  <!--Heading Ends-->
+
+<section class="section1">
+  
+    <ul>
+           <li class="list active" data-filter="All images">All images</li>
+           <li class="list" data-filter="Company">Company</li>
+           <li class="list" data-filter="Awards">Awards</li>
+           <li class="list" data-filter="Events">Events</li>
+		       <li class="list" data-filter="Food Fest">Food Fest</li>
+		      
+    </ul>
+    <div class="gallery">
+   
+    <div class="itembox over"  data-item="Events">
+        <img src="..\pvr img\polotno (3).png" alt="Avatar" class="image">
+        <div class="overlay">
+            <div >
+              <h1 class="text1">Telsta</h1>
+              <h6 class="text2">tech Solution Pvt Ltd</h6>
+            </div>
+        </div>
+      </div>
+     <div class="itembox over"  data-item="Events">
+        <img src="..\pvr img\polotno (2).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Awards">
+        <img src="..\pvr img\polotno.png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Awards">
+        <img src="..\pvr img\polotno (1).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Company">
+        <img src="..\pvr img\polotno (5).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Company">
+        <img src="..\pvr img\polotno (4).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Food Fest">
+        <img src="..\pvr img\polotno (6).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Food Fest">
+        <img src="..\pvr img\polotno (7).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+    <div class="itembox over"  data-item="Events">
+        <img src="..\pvr img\polotno (3).png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+      </div>
+     <div class="itembox over"  data-item="Events">
+        <img src="..\pvr img\polotno (2).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Awards">
+        <img src="..\pvr img\polotno.png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Awards">
+        <img src="..\pvr img\polotno (1).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Company">
+        <img src="..\pvr img\polotno (5).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Company">
+        <img src="..\pvr img\polotno (4).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Food Fest">
+        <img src="..\pvr img\polotno (6).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Food Fest">
+        <img src="..\pvr img\polotno (7).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+    <div class="itembox over"  data-item="Events">
+        <img src="..\pvr img\polotno (3).png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+      </div>
+     <div class="itembox over"  data-item="Events">
+        <img src="..\pvr img\polotno (2).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Awards">
+        <img src="..\pvr img\polotno.png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+       <div class="itembox over" data-item="Awards">
+        <img src="..\pvr img\polotno (1).png" class="image">
+        <div class="overlay">
+          <div >
+            <h1 class="text1">Telsta</h1>
+            <h6 class="text2">tech Solution Pvt Ltd</h6>
+          </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height: 400px;background-image: url('../pvr img/background15.jpg');">
+      <div class="modal-header">
+        <img src="..\pvr img\darga.jpg" width="150px" height="10px" alt="" class="rounded-circle  img-fluid d-block mx-auto mb-3">
+      </div>
+      <div class="modal-body text-primary">
+        Java Developer
+          <div class="text-black">
+            <h5 class="modal-title" id="exampleModalLabel">Sheik Darga</h5>
+            <h6>Email : sheikdarga755@gmail.com</h6>
+            <h6>Phone No : 9701299753</h6>
+          </div>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height: 400px;background-image: url('../pvr img/background15.jpg');">
+      <div class="modal-header">
+        <img src="..\pvr img\siri.jpg" width="150px" height="150px" alt="" class="rounded-circle  img-fluid d-block mx-auto mb-3">
+      </div>
+      <div class="modal-body text-primary">
+        Web Developer
+        <div class="text-black">
+          <h5 class="modal-title" id="exampleModalLabel">Siri</h5>
+          Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+          tenetur.
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height: 400px;background-image: url('../pvr img/background15.jpg');">
+      <div class="modal-header">
+        <img src="..\pvr img\prema.jpg" width="150px" height="150px" alt="" class="rounded-circle  img-fluid d-block mx-auto mb-3">
+      </div>
+      <div class="modal-body text-primary">
+        Web Developer
+        <div class="text-black">
+        <h5 class="modal-title" id="exampleModalLabel">PREMA KUMAR</h5>
+        Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+        tenetur.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height: 400px;background-image: url('../pvr img/background15.jpg');">
+      <div class="modal-header">
+        <img src="..\pvr img\shivani.jpg" width="150px" height="150px" alt="" class="rounded-circle  img-fluid d-block mx-auto mb-3">
+      </div>
+      <div class="modal-body text-primary">
+         Web Developer
+         <div class="text-black">
+          <h5 class="modal-title" id="exampleModalLabel">Shivani</h5>
+          Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+          tenetur.
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-3" data-aos="slide-up">
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #1c2331;"
+            >
+     
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+        
+          <div class="row mt-3">
+            <!-- telsta name and logo-->
+         
+            <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-4">
+             
+              <h6 class="text-uppercase fw-bold textcolor">Telsta Company</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                <img src="..\pvr img\logo3.jpg"width="150px" height="150px"/>                     
+             </p>
+            </div>
+            
+  
+            <!-- main column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 cardbody">
+            
+              <h6 class="text-uppercase fw-bold textcolor ">MAIN</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+                  <p>
+                    <a href="../html/index.html" class="text-white">Home</a>
+                          </p>
+                          <p>
+                            <a href="../html/about.html" class="text-white">About</a>
+                          </p>                                  </p>
+                          <p>
+                            <a href="../html/services.html" class="text-white" >Our Services </a>
+                            
+                          <p>
+                            <a href="../html/ContactUs.html" class="text-white">Contact</a>
+                          </p>
+                          <p>
+                            <a href="..\html\gallery.html" class="text-white">Gallery</a>
+                          </p>
+            </div>
+            
+  
+            <!-- support column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 cardbody">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold textcolor">Support</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+                  <P>Terms of Use</P>
+                   <P>Privacy Statement</P> 
+                    <P>Cookie Policy</P> 
+                    <P>Safe Harbour Provision</P> 
+                    <P>Trademarks</P> 
+                    <P>Site Map</P> 
+              
+             
+            </div>
+            
+  
+            <!-- contact column -->
+            <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 cardbody">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold textcolor">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i> KPHB COLONY</p>
+              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+              <p><i class="fas fa-phone mr-3"></i> 9701299753</p>
+              <p><i class="fas fa-print mr-3"></i> 9701299753</p>
+            </div>
+            <!--social media column-->
+            <div  class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 cardbody">
+                <h6 class="text-uppercase fw-bold textcolor">social media</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+                  <div >
+                    <img class=" my-3 " src="..\pvr img\icons8-twitter-1.png" width="40px" alt="twitter">
+                    <img class=" my-3" src="..\pvr img\icons8-facebook-48.png" width="40px" alt="facebook">
+                    <img class=" my-3" src="..\pvr img\icons8-instagram-48.png" width="40px" alt="instagram">
+                    <img class=" my-3" src="..\pvr img\icons8-youtube-48.png"width="40px" alt="youtube">
+                </div>
+                <div>
+                  <h6 class="text-uppercase fw-bold textcolor">DEVELOPMENT TEAM</h6>
+                  <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+                  
+                  <!-- Button trigger modal -->
+                  <div style="display: grid;">
+                       <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal1">SHEIK DARGA</button>
+                       <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">SIRI</button>
+                       <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3">PREMA KUMAR</button>
+                       <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal4">SHIVANI</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer -->
+  </div>
+
+<script>
+let list=document.querySelectorAll('.list');
+let itembox=document.querySelectorAll('.itembox');
+for( let i=0; i<list.length;i++){
+   list[i].addEventListener('click', function(){
+       for(let j=0; j<list.length;j++){
+           list[j].classList.remove('active');
+       }
+       this.classList.add('active');
+        
+       let dataFilter=this.getAttribute('data-filter');
+
+       for(let k=0;k<itembox.length;k++){
+           itembox[k].classList.remove('active')
+           itembox[k].classList.add('hide')
+           if(itembox[k].getAttribute('data-item')==dataFilter || dataFilter=="All images"){
+               itembox[k].classList.remove('hide');
+               itembox[k].classList.add('active');
+
+           }
+       }
+   })
+}
+</script>
+
+<!-----------------------------------------Images gallery---------------------------------------------------->
+</body>
+</html>
